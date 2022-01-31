@@ -1,0 +1,20 @@
+input:focus {
+    background-color: aqua;
+}
+
+h1:hover {
+    color: royalblue;
+}
+
+p:first-child {
+    color: aqua;
+}
+
+p:nth-child(3) {
+    color: red;
+}
+
+
+/* p::first-line {
+    color: red;
+} */
