@@ -1,0 +1,19 @@
+.cont1{
+    border: 5px dashed goldenrod;
+    min-width: 50vw;
+}
+.cont2{
+    margin-top: 50px;
+    border: 5px dotted goldenrod;
+    max-width: 50vw;
+}
+
+.cont3{
+    margin-top: 50px;
+    padding: 50px;
+    border: 10px double rosybrown;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 5px;
+    
+}
