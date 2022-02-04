@@ -1,0 +1,47 @@
+.flexbox {
+  background-color: rgb(55, 55, 189);
+  justify-content: space-around;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  width: 75%;
+  max-width: 100%;
+  margin: auto;
+}
+.flexbox1 {
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 50%;
+  margin: 30px;
+  color: azure;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  grid-gap: 100px;
+  padding: 10px;
+}
+body {
+  background-color: rgb(41, 41, 104);
+  background-attachment: fixed;
+  margin-top: 150px;
+}
+span {
+  color: rgb(200, 41, 214);
+}
+* {
+  font-family: Verdana;
+}
+p {
+  font-family: serif;
+  color: rgb(255, 255, 255);
+}
+.image {
+  width: 50%;
+  color: violet;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
