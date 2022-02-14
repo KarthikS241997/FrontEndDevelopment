@@ -1,0 +1,14 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+.toCard{
+    width: 60vw;
+    margin-top:10vh
+}
+button{
+    margin-top: 2vh;
+}
+h1{
+    text-align: center;
+}

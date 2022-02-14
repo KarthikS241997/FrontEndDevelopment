@@ -1,0 +1,21 @@
+<form action="" autocomplete="off" [formGroup]="login" (ngSubmit)="onsubmit()">
+    <label for="">Enter First Name</label>
+    <input type="text" formControlName="fname">
+    <small *ngIf="!f.valid">Enter Valid First Name</small>
+    <br>
+    <label for="">Enter Last Name</label>
+    <input type="text" formControlName="lname">
+    <br>
+    <label for="">Enter Age</label>
+    <input type="text" formControlName="age">
+    <br>
+    <div formGroupName="address">
+        <label for="">Enter Address Details:</label>
+        <br>
+        <label for="">Street</label>
+        <input type="text" formControlName="street">
+        <label for="">State</label>
+        <input type="text" formControlName="state">
+        <input type="submit" value="Submit">
+    </div>
+</form>

@@ -1,0 +1,11 @@
+<!-- Template Form -->
+
+<form action="" #login="ngForm" (ngSubmit)="signin(login)">
+    <input type="text" name="fname" placeholder="Enter First Name" #fname="ngModel" minlength="4" ngModel>
+    <small *ngIf="fname.invalid" id="error">Please Enter Valid Name</small>
+    <input type="text" name="lname" placeholder="Enter Last Name" #lname="ngModel" minlength="4" ngModel>
+    <small *ngIf="lname.invalid" id="error">Please Enter Valid Name</small>
+    <input type="password" name="pass" placeholder="Enter Password" #pass="ngModel" ngModel>
+    <small *ngIf="pass.invalid" id="error">Please Enter Valid Password</small>
+    <button type="submit" [disabled]="!login.valid">Sign In</button>
+</form>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="toCard card">
+        <div class="card-body">
+            <h1>ENTER THE DETAILS</h1> <br>
+            <form action="" #login="ngForm" (ngSubmit)="signin(login)">
+                <label>FIRST NAME</label>
+                <input type="text" class="form-control" name="fname" placeholder="Enter First Name" #fname="ngModel" minlength="4" ngModel>
+                <small *ngIf="fname.invalid">Please enter first name</small>
+                <br>
+                <label>LAST  NAME</label>
+                <input type="text" class="form-control" name="fname" placeholder="Enter last Name" #lname="ngModel" minlength="4" ngModel>
+                <small *ngIf="lname.invalid">Please enter last name</small>
+                <br>
+                <label>EMAIL</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter password" #mail="ngModel" ngModel>
+                <small *ngIf="mail.invalid">Please enter email</small>
+                <br>
+                <label>PASSWORD</label>
+                <input type="password" class="form-control" name="pass" placeholder="Enter password" #pass="ngModel" ngModel>
+                <small *ngIf="pass.invalid">Please enter valid password</small>
+                <br>
+                <button type="button" class="btn btn-primary" [disabled]="!login.valid">Submit</button>
+            </form>
+
+            <br><br>
+        </div>
+    </div>
+</body>
+
+</html>

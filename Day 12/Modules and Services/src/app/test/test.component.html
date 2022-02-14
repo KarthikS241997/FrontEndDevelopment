@@ -1,0 +1,10 @@
+<table [ngStyle]="{ 'border': '1px solid black' , 'width': '50%', 'text-align':'center'}">
+    <tr>
+        <th [ngStyle]="{ 'border': '1px solid black'}">Car name</th>
+        <td [ngStyle]="{ 'border': '1px solid black'}" *ngFor="let car of getcars">{{car}}</td>
+    </tr>
+    <tr>
+        <th [ngStyle]="{ 'border': '1px solid black'}">Car price</th>
+        <td [ngStyle]="{ 'border': '1px solid black'}" *ngFor="let price of getprice">{{price}}</td>
+    </tr>
+</table>
