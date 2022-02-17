@@ -1,0 +1,32 @@
+.main{
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 7px;
+    /* padding: 7px; */
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+/* Section One */
+.sectionOne{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    /* padding: 5px; */
+}
+/* SectionThree */
+.sectionThree{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    /* padding: 5px; */
+}
+
+h5{
+    margin-top: 8px;
+}
+
+.tweeterhandle{
+    color: grey;
+}

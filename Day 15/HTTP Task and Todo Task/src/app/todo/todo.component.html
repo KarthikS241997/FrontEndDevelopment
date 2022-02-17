@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>To-Do List</h2>
+    <div class="addNew">
+        <form action="" (submit)="addTask()">
+            <input type="text" name="newTask" [(ngModel)]="newTask">
+            <button type="submit" id="btn" class="btn">Add Task</button>
+        </form>
+        <br>
+        <hr>
+    </div>
+    <div *ngFor="let item of task;let i=index" class="list">
+        <div class="task" *ngIf="item">
+            <label for="">{{item}} </label>
+            <button (click)="delTask(i)" class="btn">Delete</button>
+        </div>
+
+    </div>
+</div>
