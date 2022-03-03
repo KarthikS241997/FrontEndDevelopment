@@ -1,0 +1,8 @@
+This is the test file. This line is newly added
+This line is added using writeFileSync with flag
+Appended
+Appended
+Appended
+Appended
+Appended
+Appended
